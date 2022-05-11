@@ -1,0 +1,3 @@
+# 该文件用于配置 monoreport 项目结构，是开启的文件
+packages:
+  - "packages/**" # 存放编写的简历模板
