@@ -18,8 +18,8 @@ module.exports = defineConfig({
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
-    'prettier',
     "./.eslintrc-auto-import.json",
+    'prettier',
   ],
   // 支持ts的最新语法
   parserOptions: {
