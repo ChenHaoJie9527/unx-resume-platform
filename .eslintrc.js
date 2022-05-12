@@ -19,7 +19,7 @@ module.exports = defineConfig({
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'prettier',
-    // "./.eslintrc-auto-import.json",
+    "./.eslintrc-auto-import.json",
   ],
   // 支持ts的最新语法
   parserOptions: {
