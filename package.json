@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "format": "prettier --write ./**/*.{vue,ts,tsx,js,jsx,css,less,scss,json,md}"
   },
   "dependencies": {
     "vue": "^3.2.25"
@@ -24,8 +26,20 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^17.0.32",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
     "@vitejs/plugin-vue": "^2.3.2",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-define-config": "^1.4.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "prettier": "^2.6.2",
     "typescript": "^4.6.4",
+    "unplugin-auto-import": "^0.7.1",
+    "unplugin-vue-define-options": "^0.6.1",
     "vite": "^2.9.8",
     "vue-tsc": "^0.34.12"
   }
