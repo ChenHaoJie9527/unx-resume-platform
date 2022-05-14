@@ -3,7 +3,7 @@
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
@@ -11,9 +11,23 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
     "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true
+    "incremental": false,
+    "types": ["vite/client"],
+    "baseUrl": "./",
+    "paths": {
+      "@": ["src"],
+      "@/*": ["src/*"],
+      "@assets": ["src/assets/*"],
+      "@utils": ["src/utils/*"]
+    },
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "noImplicitAny": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["dist", "node_modules", "**/node_modules/*", "**/*.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
