@@ -2,7 +2,7 @@
 // We suggest you to commit this file into source control
 declare global {
   const [alias]: typeof import('[package_name]')['[from]']
-  const [import_names]: typeof import('[package_name]')['[import_names]']
+  const [importNames]: typeof import('[package_name]')['[importNames]']
   const computed: typeof import('vue')['computed']
   const createApp: typeof import('vue')['createApp']
   const createLogger: typeof import('vuex')['createLogger']

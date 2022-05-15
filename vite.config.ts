@@ -33,7 +33,7 @@ export default defineConfig({
         'vue-router',
         'vuex',
         {
-          '[package_name]': ['[import_names]', ['[from]', '[alias]']],
+          '[package_name]': ['[importNames]', ['[from]', '[alias]']],
         },
       ],
       dts: './auto-imports.d.ts',
