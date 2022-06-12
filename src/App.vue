@@ -4,6 +4,7 @@
 import HelloWorld from './components/HelloWorld.vue';
 import Header from '@/components/Header';
 import Navbar from '@/components/Navbar';
+import Tabs from "@/components/Tabs.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import Navbar from '@/components/Navbar';
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
   <Header />
   <Navbar />
+  <Tabs />
 </template>
 
 <style lang="scss">
