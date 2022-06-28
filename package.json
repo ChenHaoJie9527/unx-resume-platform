@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
-    "format": "prettier --write ./**/*.{vue,ts,tsx,js,jsx,css,less,scss,json,md}"
+    "lint:pre": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "format": "prettier --write ./**/*.{vue,ts,tsx,js,jsx,css,less,scss,json,md}",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@p-plus/components": "workspace:^1.0.0",
@@ -52,7 +53,9 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^8.7.1",
+    "husky": "^8.0.1",
     "postcss": "^8.4.13",
+    "postcss-import": "^14.1.0",
     "prettier": "^2.6.2",
     "sass": "^1.51.0",
     "typescript": "^4.6.4",
@@ -66,7 +69,8 @@
     "peerDependencyRules": {
       "ignoreMissing": [
         "@babel/core",
-        "postcss"
+        "postcss",
+        "postcss-import"
       ],
       "allowedVersions": {
         "eslint": "^8.15.0",

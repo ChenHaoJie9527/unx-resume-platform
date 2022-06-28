@@ -11,6 +11,7 @@ export default defineComponent({
       console.log('点击了+1111111111111111');
     },
     inc(val: any) {
+      console.log('val', val);
       this.count++;
     },
   },
@@ -19,7 +20,9 @@ export default defineComponent({
       <>
         <div class={styles.header}>Header</div>
         <button onClick={this.onClicks}>点击按钮</button>
-        <div onClick={withModifiers(this.inc, ['self'])}>点击：{this.count}</div>
+        <div onClick={withModifiers(() => this.inc(10), ['self'])}>
+          点击：{this.count}
+        </div>
       </>
     );
   },
