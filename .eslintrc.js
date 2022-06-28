@@ -66,16 +66,16 @@ module.exports = defineConfig({
     'no-multi-str': 'error',
     'no-with': 'error',
     'no-void': 'error',
-    'sort-imports': [
-      'warn',
-      {
-        ignoreCase: false,
-        ignoreDeclarationSort: true,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-        allowSeparatedGroups: false,
-      },
-    ],
+    // 'sort-imports': [
+    //   'warn',
+    //   {
+    //     ignoreCase: false,
+    //     ignoreDeclarationSort: true,
+    //     ignoreMemberSort: false,
+    //     memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+    //     allowSeparatedGroups: false,
+    //   },
+    // ],
 
     // stylistic-issues
     'prefer-exponentiation-operator': 'error',
@@ -84,10 +84,10 @@ module.exports = defineConfig({
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'off',
-    '@typescript-eslint/consistent-type-imports': [
-      'error',
-      { disallowTypeAnnotations: false },
-    ],
+    // '@typescript-eslint/consistent-type-imports': [
+    //   'error',
+    //   { disallowTypeAnnotations: false },
+    // ],
     '@typescript-eslint/no-var-requires': 'off',
 
     // vue
